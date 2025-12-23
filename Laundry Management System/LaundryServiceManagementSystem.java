@@ -105,11 +105,24 @@ public class LaundryServiceManagementSystem {
                                                 System.out.println("Pants: " + o.pants);
                                                 System.out.println("Bedsheets: " + o.bedsheets);
                                                 System.out.println("Total Bill: " + o.totalbill);
+                                                System.out.println("Completed: " + o.isCompleted);
                                                 billFound = true;
                                                 break;
 
+
                                         }
+                                       
                                 }
+                                 if(!billFound){
+                                                System.out.println("Order ID not found.");
+                                        }
+                                        break;
+                        case 5:
+                                System.out.println("Thanks for using Laundry Service");
+                                System.exit(0);
+                        default:
+                                System.out.println("Invalid Choice. Try Again.");       
+                                        
                                  
                         
                         
